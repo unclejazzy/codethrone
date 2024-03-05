@@ -1,0 +1,479 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #232323;
+}
+:root {
+  --primary: #933ded;
+  --dark: #232323;
+  --pure: #fff;
+  --smoke: whitesmoke;
+  --dark-gray: #999;
+}
+.main {
+  position: absolute;
+  width: 100%;
+}
+
+.hero{
+  background-image: url(https://images.unsplash.com/photo-1537136102161-ea2262437412?q=80&w=2026&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  padding-right: 24px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  height: 78.5px;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo a{
+  color:white;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.nav-wrapper ul.nav-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+}
+.nav-wrapper ul.nav-list li {
+  margin-left: 30px;
+  padding: 20px 0;
+  position: relative;
+}
+
+.nav-wrapper ul.nav-list li a {
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all .5s ease-in-out;
+}
+
+.nav-wrapper ul.nav-list li a:hover, .nav-wrapper ul.nav-list li.active a{
+  color: rgb(111, 113, 218);
+}
+
+.btn {
+  background: rgba(111, 113, 218, .4);
+  color: var(--pure);
+  outline: none;
+  padding: 8px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  transition: all .5s ease-in-out;
+}
+
+.btn:hover {
+  background: transparent;
+  border-color: var(--pure);
+}
+.header{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: calc(100vh - 78.5px);
+  padding-bottom: 7rem;
+  padding-top: 4rem;
+  margin: inherit;
+}
+.info h3{
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+  margin: inherit;
+}
+.info h1{
+  line-height: 1.45;
+  font-weight: 700;
+  font-size: 3rem;
+  max-width: 50rem;
+  margin: inherit;
+  color: rgb(111, 113, 218);
+}
+.info p{
+  line-height: 2;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin: inherit;
+  font-weight: 700;
+  color: white;
+}
+.info2{
+  background-image: url("https://d1le3ohiuslpz1.cloudfront.net/skillcrush/wp-content/uploads/2021/12/courses-hero-background.png");
+  z-index: 999;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.iright{
+  position: absolute;
+  width: 60vw;
+  gap: 25px;
+  position: relative;
+}
+
+.iright h2{
+  width: 70%;
+  font-size: 1.6em;
+  font-weight: 900;
+}
+
+
+.iright p {
+  width: 90%;
+  height: auto;
+  font-size: 1rem;
+  line-height: 32px;
+}
+.ileft{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.ileft img{
+  object-fit: cover;
+}
+@media(max-width: 1010px){
+  .ileft{
+    display: none;
+  }
+}
+
+.contant{
+  padding: 10rem 0rem;
+  width: 100%;
+  height: 50vh;
+  box-sizing: border-box;
+  display: flex;
+  background-color: white;  
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contant h1{
+  font-size: 2.5em;
+  font-weight: 900;
+}
+.contant p{
+  align-items: center;
+  font-size: 1em;
+  line-height: 2;
+  text-align: center;
+  width: 50%;
+  margin-top: 10px;
+}
+
+.cards{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  background-color: white;
+}
+.card-1{
+  position: absolute;
+  margin: 1em 1em;
+  width: 80vw;
+  background-color: rgb(225, 239, 236);
+  border-radius: 15px;
+}
+.details{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 35px;
+}
+.cleft{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cleft img{
+  margin-left: 100px;
+  display: flex;
+  flex-wrap:wrap ;
+}
+
+.cright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  height: 100%;
+}
+.cright h2{
+  position: relative;
+  font-size: 1.9em;
+  padding: 1em;
+  font-family: monospace;
+}
+.btns-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 1em;
+}
+.btns-right button{
+  margin-right: 20px;
+  padding: 5px;
+  border-radius: 20px;
+  border: none;
+  cursor: auto;
+  background-color: rgb(171, 239, 216);
+}
+.cright p{
+  position: relative;
+  font-size: 1em;
+  padding: 1em;
+  line-height: 2;
+}
+.fetaurs{
+  position: relative;
+  padding: 1.2em;
+  line-height: 2;
+  font-size: 1.2em;
+  list-style-type: none;
+}
+.fetaurs li{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.fetaurs i{
+  position: relative;
+  margin-right: 10px;
+  margin-top: 2px;
+  width: 20px;
+  height: 20px;
+  mix-blend-mode: color-burn;
+}
+
+.btn-feture button{
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: 80px;
+  padding: 18px;
+  border-radius: 5px;
+  font-size: 1vw;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.one{
+  background-color: white;
+} 
+.one:hover{
+  background-color: rgb(171, 239, 216);
+}
+.two{
+  background-color: rgb(171, 239, 216);
+}
+.two:hover{
+  background-color: white;
+}
+
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #222;
+  color: #ccc;
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 1vw;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  color: #f8f9fa;
+  font-size: 1.1vw;
+}
+
+.footer-section ul,
+.footer-section p,
+.footer-section form {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section ul {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-right: 10px;
+}
+.fa-envelope{
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #f8f9fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-section .fasbook:hover,
+.footer-section .fasbook:focus {
+  color: #316FF6;
+}
+.footer-section .twitter:hover,
+.footer-section .twitter:focus {
+  color: #1DA1F2;
+}
+.footer-section .insta:hover,
+.footer-section .insta:focus {
+  background-image: linear-gradient(to right, #8a3ab9, #bc2a8d, #fccc63, #fbad50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: color 0.3s ease;
+}
+.footer-section .linkedin:hover,
+.footer-section .linkedin:focus {
+  color: #0077b5;
+}
+
+.footer-section .icon {
+  font-size: 1.5rem;
+}
+
+.newsletter form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+}
+
+.newsletter button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover,
+.newsletter button:focus {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-section ul {
+    justify-content: center;
+  }
+
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter input[type="email"],
+  .newsletter button {
+    width: 100%;
+    margin: 8px 0;
+  }
+}
+
+@media (min-width:600px) {
+  body {
+      font-size: 18px;
+  }
+}
